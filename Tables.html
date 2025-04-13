@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Tables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            margin-bottom: 40px;
+            border-collapse: collapse;
+            background: linear-gradient(135deg, #ffffff, #f0f0f0);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #ecf0f1;
+        }
+        .highlight {
+            background-color: #e74c3c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Employee Details</caption>
+        <thead>
+            <tr>
+                <th>Sr.No</th>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1001</td><td>John</td><td>Red</td></tr>
+            <tr><td>2</td><td>1002</td><td>Peter</td><td>Blue</td></tr>
+            <tr><td>3</td><td>1003</td><td>Henry</td><td>Green</td></tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>Product</caption>
+        <thead>
+            <tr><th>Product Name</th><th>Price</th><th>Stock</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Laptop</td><td>$999</td><td>50</td></tr>
+            <tr><td>Smartphone</td><td>$499</td><td>200</td></tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>Student Grades</caption>
+        <thead>
+            <tr><th>Student Name</th><th>Subject</th><th>Grade</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Alice Johnson</td><td>Math</td><td>A</td></tr>
+            <tr><td>David Lee</td><td>Science</td><td>B+</td></tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>Events</caption>
+        <thead>
+            <tr><th>Event</th><th>Date</th><th>Location</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Conference</td><td>March 15</td><td>London</td></tr>
+            <tr><td>Workshop</td><td>April 20</td><td>United Kingdom</td></tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>Boarding Pass</caption>
+        <tbody>
+            <tr><td colspan="2" class="highlight">Boarding Pass</td></tr>
+            <tr><td>Passenger Name:</td><td>John Doe</td></tr>
+            <tr><td>Flight Number:</td><td>XYZ123</td></tr>
+            <tr><td>Date:</td><td>Dec 30, 2024</td></tr>
+            <tr><td>Departure:</td><td>New York (JFK) - 08:00 AM</td></tr>
+            <tr><td>Arrival:</td><td>Los Angeles (LAX) - 11:30 AM</td></tr>
+            <tr><td>Seat:</td><td>12A</td></tr>
+            <tr><td>Gate:</td><td>C4</td></tr>
+            <tr><td colspan="2">Scan for Boarding</td></tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
